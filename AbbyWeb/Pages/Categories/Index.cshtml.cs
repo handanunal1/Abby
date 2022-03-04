@@ -16,7 +16,9 @@ namespace AbbyWeb.Pages.Categories
 
         public void OnGet()
         {
+
             Categories = _db.Category;
+            //Categories =  _db.Category.Where(x => x.Name == "Horror").ToList();
 
 
         }
